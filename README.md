@@ -12,6 +12,7 @@
 | # | 产品 | 介绍 | 技术栈 | 链接 |
 |---|---|---|---|---|
 | 1 | **词刻 CIKE** | 本地优先的多语言词汇与阅读学习端：CET-6 / 英日法德西意 / 粤语 / 拉丁语，纯静态前端，支持离线与 AI 词典。 | Vanilla JS · PWA · Offline · Education | [仓库](https://github.com/Brambleaaaaaa/cike-multibook) / [在线体验](https://brambleaaaaaa.github.io/cike-multibook/) |
+| 2 | **cike-multibook** | 词刻 CIKE：本地优先的多语言词汇学习端（CET-6 / 英日法德西意 / 粤语 / 拉丁语），纯静态前端，支持离线与 GitHub Pages 部署 |  | [仓库](https://github.com/Brambleaaaaaa/cike-multibook) |
 <!-- PRODUCTS:END -->
 
 ## 新增产品
