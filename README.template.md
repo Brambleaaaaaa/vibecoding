@@ -13,7 +13,15 @@
 
 ## 新增产品
 
-复制仓库后，在根目录运行：
+### 自动同步（推荐）
+
+在新产品仓库的 About 里加上 `vibecoding` topic。本仓库每周一自动扫描账号下带该 topic 的仓库，按顺序加入列表并提交。
+
+立即触发：Actions → `sync-products` → Run workflow。
+
+### 手动加入
+
+在根目录运行：
 
 ```powershell
 python scripts/add_product.py `
