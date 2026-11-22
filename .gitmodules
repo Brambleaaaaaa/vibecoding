@@ -2,6 +2,3 @@
 	path = products/01-cike
 	url = https://github.com/Brambleaaaaaa/cike-multibook.git
 	branch = main
-[submodule "products/02-cike-multibook"]
-	path = products/02-cike-multibook
-	url = https://github.com/Brambleaaaaaa/cike-multibook.git

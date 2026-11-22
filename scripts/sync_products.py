@@ -31,9 +31,14 @@ def run(cmd):
         raise SystemExit(f"command failed: {' '.join(cmd)}")
 
 
+def norm_url(url):
+    return (url or "").rstrip("/").removesuffix(".git").lower()
+
+
 def main():
     data = json.load(open(os.path.join(ROOT, "products.json"), encoding="utf-8"))
     known = {p["slug"] for p in data["products"]}
+    known_urls = {norm_url(p.get("repo")) for p in data["products"]}
 
     repos = []
     page = 1
@@ -49,7 +54,7 @@ def main():
     added = 0
     for repo in repos:
         slug = repo["name"]
-        if slug == SELF or slug in known:
+        if slug == SELF or slug in known or norm_url(repo["html_url"]) in known_urls:
             continue
         if TOPIC not in (repo.get("topics") or []):
             continue
@@ -68,6 +73,7 @@ def main():
             "tags": [t for t in (repo.get("topics") or []) if t != TOPIC],
         })
         known.add(slug)
+        known_urls.add(norm_url(repo["html_url"]))
         added += 1
 
     data["products"].sort(key=lambda p: p["no"])
