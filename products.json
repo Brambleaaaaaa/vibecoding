@@ -1,0 +1,13 @@
+{
+  "products": [
+    {
+      "no": 1,
+      "name": "词刻 CIKE",
+      "slug": "cike",
+      "repo": "https://github.com/Brambleaaaaaa/cike-multibook",
+      "demo": "https://brambleaaaaaa.github.io/cike-multibook/",
+      "desc": "本地优先的多语言词汇与阅读学习端：CET-6 / 英日法德西意 / 粤语 / 拉丁语，纯静态前端，支持离线与 AI 词典。",
+      "tags": ["Vanilla JS", "PWA", "Offline", "Education"]
+    }
+  ]
+}

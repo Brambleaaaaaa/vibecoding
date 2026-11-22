@@ -1,0 +1,4 @@
+[submodule "products/01-cike"]
+	path = products/01-cike
+	url = https://github.com/Brambleaaaaaa/cike-multibook.git
+	branch = main
